@@ -1,11 +1,14 @@
 {
-  "pages":[
-    "pages/index/index"
+  "pages": [
+   
+    "pages/index/index",
+    "pages/Ms/Ms",
+    "pages/book/book"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "韵书",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   }
 }

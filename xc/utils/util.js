@@ -15,7 +15,7 @@ const fetch = {
         },
         fail(err) {
           reject(err)
-        },
+        }
     })
     })
   },

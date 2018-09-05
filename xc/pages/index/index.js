@@ -11,6 +11,12 @@ Page({
     interval: 3000,
     duration: 500
   },
+  click_swiper:function(e) {
+    const id = e.currentTarget.dataset.id
+    wx.navigateTo({
+      url: `/pages/Ms/Ms?id=${id}`
+    })
+  },
   onLoad () {
  this.getData()
  this.getContent()
@@ -28,5 +34,6 @@ this.setData({
   mainContent:res.data
 })
     })
-  }
+  },
+  
 })
