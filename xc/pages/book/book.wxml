@@ -1,6 +1,9 @@
 <!--pages/book/book.wxml-->
 <view class='sedi'>
-<view class='title' wx:for="{{title}}" wx:key="{{index}}"  
-bindtap='mathto' data-id='{{item._id}}
->{{item.title}}</view>
+<image src='/static/img/cdr.svg' class='loading'wx:if="{{isLoading}}"></image>
+<view class='title' wx:for="{{title}}" wx:key="{{index}}"  >
+<navigator url="{{'/pages/content/content?id=' + item._id + '&&bookId='+titleId}}">
+{{item.title}}
+</navigator>
+</view>
 </view>

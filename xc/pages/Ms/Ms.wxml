@@ -1,5 +1,6 @@
 <!--Ms/Ms.wxml-->
 <view class='dateils'>
+<image src='/static/img/cdr.svg' class='loading'wx:if="{{isLoading}}"></image>
 <view class='book-dateils'>
 <view class='book-t'>
 <image class='img' src='{{bookData.data.img}}'></image>

@@ -6,7 +6,7 @@ Page({
    */
   data: {
     titleId:{},
-    title:"",
+    title:[],
     bookId:""
   },
   onLoad: function (options) {

@@ -1,23 +1,23 @@
 <!--index.wxml-->
 <view class="container index">
+<image src='/static/img/cdr.svg' class='loading'wx:if="{{isLoading}}"></image>
 <swiper indicator-active-color='#00B26A'indicator-dots='ture' autoplay='ture' interval='4000' duration='800'circular>
   <block wx:for="{{swiperData}}" wx:key="{{index}}">
-    <swiper-item bindtap='click_swiper' data-id='{{item.book._id}}'
-    >
+    <swiper-item bindtap='click_swiper' data-id='{{item.book._id}}'>
       <image src="{{item.img}}"  class="slide-image" />
     </swiper-item>
   </block>
 </swiper>
-<view class='main-content'>
-<view class='content-item' wx:for="{{mainContent}}" wx:key="{{index}}">
+<view class='main-content' >
+<view class='content-item' wx:for="{{mainContent}}" wx:key="{{index}}" >
 <view class='title'>
 {{item.title}}
 </view>
-<view class='content' wx:for="{{item.books}}">
-<view class='box-l'>
+<view class='content' wx:for="{{item.books}}" >
+<view class='box-l' bindtap='click_swiper' data-id='{{item._id}}'>
 <image src='{{item.img}}'></image>
 </view>
-<view class='box-r'>
+<view class='box-r' bindtap='click_swiper' data-id='{{item._id}}'>
 <view class='book-title'>{{item.title}}</view>
 <view class='book-desc'>{{item.desc}}</view>
  <view class='author'>
