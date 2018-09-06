@@ -1,8 +1,9 @@
 <!--index.wxml-->
 <view class="container index">
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<swiper indicator-active-color='#00B26A'indicator-dots='ture' autoplay='ture' interval='4000' duration='800'circular>
   <block wx:for="{{swiperData}}" wx:key="{{index}}">
-    <swiper-item bindtap='click_swiper' data-id='{{item.book._id}}'>
+    <swiper-item bindtap='click_swiper' data-id='{{item.book._id}}'
+    >
       <image src="{{item.img}}"  class="slide-image" />
     </swiper-item>
   </block>

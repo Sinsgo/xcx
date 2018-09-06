@@ -1,36 +1,33 @@
-// pages/book/book.js
-import {fetch} from "../../utils/util.js"
+// pages/content/content.js
+import { fetch,showToast } from "../../utils/util.js"
+const app = getApp()
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
-    titleId:{},
+    titleId: "",
+    article:{},
     title:"",
     bookId:""
   },
+  /**
+   * 生命周期函数--监听页面加载
+   */
   onLoad: function (options) {
-    console.log(options)
-    this.setData({
-      titleId: options.id
-    })
+   this.setData({
+     titleId:options.id
+   })
    this.getData()
   },
- getData(){
-   fetch.get(`/titles/${this.data.titleId}`).then(res=>{
-     console.log(res)
-        this.setData({
-          title:res.data
-     })
-   })
- },
-  mathto:function(e){
-    console.log(e) 
-    const c = e.currentTarget.dataset.id
-    wx.navigateTo({
-      url: `/pages/content/content?id=${c}`,
+  getData(){
+    fetch.get(`/article/${this.data.titleId}`).then(res=>{
+      // let data = app.towxml.toJson(res.data.article.content,'markdown');
+      console.log(res)
+    this.setData({
+      article:res,
+      title:res
     })
+  })
   },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

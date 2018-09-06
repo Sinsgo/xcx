@@ -1,9 +1,9 @@
 {
   "pages": [
-   
     "pages/index/index",
     "pages/Ms/Ms",
-    "pages/book/book"
+    "pages/book/book",
+    "pages/content/content"
   ],
   "window": {
     "backgroundTextStyle": "light",

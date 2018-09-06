@@ -14,7 +14,6 @@ Page({
    console.log(options)
    this.setData({
      bookId:options.id
-     
    })
     this.getData()
   },

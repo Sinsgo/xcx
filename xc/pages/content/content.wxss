@@ -1,0 +1,6 @@
+/* pages/content/content.wxss */
+.book{
+  width: 700rpx;
+  padding-left: 20rpx;
+  font-size: 14px;
+}

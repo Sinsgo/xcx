@@ -27,4 +27,4 @@
 <view class='catalogs'>共{{bookData.length}}章</view>
 <view class='update-time'>更新两天前></view>
 </view>
-<view class='read-btn-wrap' bindtap='logbtn' data-id='{{item.book._id}}' ><button class='btn'>阅读</button></view>
+<view class='read-btn-wrap' bindtap='logbtn' data-id='{{bookData.data._id}}' ><button class='btn'>阅读</button></view>

@@ -1,2 +1,6 @@
 <!--pages/book/book.wxml-->
-<view class='sedi'>{{}}</view>
+<view class='sedi'>
+<view class='title' wx:for="{{title}}" wx:key="{{index}}"  
+bindtap='mathto' data-id='{{item._id}}
+>{{item.title}}</view>
+</view>

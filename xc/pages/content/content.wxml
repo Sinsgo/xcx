@@ -1,0 +1,6 @@
+<!--pages/content/content.wxml-->
+<view class='book'>
+<view class='main'>
+<wemark md="{{title.data.article.content}}" link highlight type="wemark"></wemark>
+</view>
+</view>

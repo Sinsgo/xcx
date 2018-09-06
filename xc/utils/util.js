@@ -23,4 +23,17 @@ const fetch = {
     return this.http(url,'GET',data)
   }
 }
+// showToast = function (message ,type="success"){
+// wx.showToast({
+//   title: 'message',
+//   icon: 'warning',
+//   image: '',
+//   duration: 500,
+//   mask: true,
+//   success: function(res) {},
+//   fail: function(res) {},
+//   complete: function(res) {},
+// })
+// }
+// exports.showToast = showToast;
 exports.fetch= fetch;
