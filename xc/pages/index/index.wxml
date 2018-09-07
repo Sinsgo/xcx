@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<view>
 <view class="container index">
 <image src='/static/img/cdr.svg' class='loading'wx:if="{{isLoading}}"></image>
 <swiper indicator-active-color='#00B26A'indicator-dots='ture' autoplay='ture' interval='4000' duration='800'circular>
@@ -8,6 +9,7 @@
     </swiper-item>
   </block>
 </swiper>
+
 <view class='main-content' >
 <view class='content-item' wx:for="{{mainContent}}" wx:key="{{index}}" >
 <view class='title'>
@@ -32,5 +34,18 @@
 </view>
 </view>
 </view>
-   </view>
+</view>
+
+<view wx:if="{{ loadDone}}">
+<view class='loading-more' wx:if="{{hasMore}}">
+<image src='/static/img/ic.svg' class='loading-img'></image>
+<text>加载中.....</text>
+</view>
+<view class='no-more' wx:else>
+<view class='no-more-text'>底线</view>
+<text class='line'></text>
+</view>
+</view>
+</view>
+
 

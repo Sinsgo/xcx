@@ -21,19 +21,19 @@ const fetch = {
   },
   get(url,data){
     return this.http(url,'GET',data)
-  }
-}
-// showToast = function (message ,type="success"){
-// wx.showToast({
-//   title: 'message',
-//   icon: 'warning',
-//   image: '',
-//   duration: 500,
-//   mask: true,
-//   success: function(res) {},
-//   fail: function(res) {},
-//   complete: function(res) {},
-// })
+  },
+//   post(url, data){
+//     return this.http(url, 'Post', data)
+//   }
 // }
-// exports.showToast = showToast;
+// const login = ()=>{
+//   wx.login({
+//    success(res){
+//      fetch.post('/login',{
+//        code:res.code,
+//        appid:""
+//      })
+//    }
+//   })
+   }
 exports.fetch= fetch;

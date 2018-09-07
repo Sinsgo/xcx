@@ -34,4 +34,11 @@ Page({
       url: `/pages/book/book?id=${p}`,
     })
   },
+  onShareAppMessage: function () {
+   return{
+     title:this.data.bookData.data.title,
+     path:`/pages/Ms/Ms?id=${this.data.bookId}`,
+     imageUrl:this.data.bookData.data.img
+   }
+  },
 })

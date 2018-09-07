@@ -3,12 +3,36 @@
     "pages/index/index",
     "pages/Ms/Ms",
     "pages/book/book",
-    "pages/content/content"
+    "pages/content/content",
+    "pages/list/list",
+    "pages/movies/movies"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "韵书",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/img/sy1.png",
+        "selectedIconPath": "/static/img/sy2.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "爱看",
+        "iconPath": "/static/img/yd2.png",
+        "selectedIconPath": "/static/img/yd1.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "个人中心",
+        "iconPath": "/static/img/gr2.png",
+        "selectedIconPath": "/static/img/gr1.png"
+      }
+    ]
   }
 }
