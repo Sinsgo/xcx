@@ -1,2 +1,15 @@
 <!--pages/list/list.wxml-->
-<text>pages/list/list.wxml</text>
+<view>
+<view class='collect'>
+<image class='img' src=''></image>
+<view class='book'>
+<view class='title'>入门指南青云</view>
+<view>1/5章</view>
+</view>
+<view class='box'>
+<button class='btn'>继续阅读</button>
+<button class='btn'>继续阅读</button>
+</view>
+</view>
+</view>
+

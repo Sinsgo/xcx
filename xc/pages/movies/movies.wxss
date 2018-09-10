@@ -1,1 +1,6 @@
 /* pages/movies/movies.wxss */
+.book{
+  padding-top: 20rpx;
+  height: 300rpx;
+  background: skyblue;
+}

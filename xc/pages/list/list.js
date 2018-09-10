@@ -1,18 +1,19 @@
 // pages/list/list.js
+import { fetch, showToast } from "../../utils/util.js"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    book:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+       this.getData()
   },
 
   /**
@@ -21,8 +22,15 @@ Page({
   onReady: function () {
   
   },
-
-  /**
+ getData(){
+   fetch.get(`/readList/`).then(res=>{
+     console.log(res)
+     this.setData({
+       book:res
+     })
+   })
+ },
+   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {

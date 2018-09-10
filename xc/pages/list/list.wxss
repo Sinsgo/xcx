@@ -1,1 +1,27 @@
-/* pages/list/list.wxss */
+.collect{
+  padding-left: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.img {
+  width: 230rpx;
+  height: 310rpx;
+  border: 1px solid red;
+  }
+  .book{
+    line-height: 2;
+   font-size: 14px;
+   color: #555;
+  }
+  .box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  .box .btn{
+    color: #000;
+    width: 200rpx;
+    font-size: 12px;
+    background: #e9e9e9;
+    border: 1px solid #e9e9e9;
+  }

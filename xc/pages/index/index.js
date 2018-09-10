@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-import {fetch} from '../../utils/util.js'
+import {fetch,login} from '../../utils/util.js'
 Page({
   data: {
     swiperData: [ ],
@@ -16,8 +16,8 @@ Page({
     loadDone:false
   },
   onLoad () {
+    login()
     Promise.all([this.getData(), this.getContent()]).then(() => {
-      console.log(31313)
       this.setData({
       hasMore: true,
       pn: 1,
@@ -109,7 +109,6 @@ return new Promise(resolve=>{
   
   onPullDownRefresh(){
     Promise.all([this.getData(), this.getContent()]).then(()=>{
-      console.log(31313)
       this.setData({
         hasMore: true,
         pn: 1

@@ -1,2 +1,7 @@
 <!--pages/movies/movies.wxml-->
-<text>pages/movies/movies.wxml</text>
+<view>
+<view class='book'>
+<image src=''></image>
+<text>姓名</text>
+</view>
+</view>
